@@ -1,13 +1,4 @@
-# parser-aa-vars
-
-### Install
-```bash
-npm install parser-aa-vars
-```
-
-### Example
-```javascript
-const parser = require('parser-aa-vars');
+const parser = require('./index');
 
 const definition = {
   messages: [
@@ -42,5 +33,5 @@ const definition = {
   ]
 };
 
-console.log(parser(definition)); // [ 'd', 'sub', 'output', 'payment' ]
-```
+console.log(JSON.stringify(parser(definition)));
+
