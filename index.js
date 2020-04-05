@@ -1,7 +1,7 @@
 module.exports = function (definition) {
   const vars = {};
   const arrResult = JSON.stringify(definition)
-  .match(/trigger.data.([.a-z]+)/g)
+  .match(/trigger.data.([.a-zA-Z0-9_]+)/g)
   .map(v => v.split('.').splice(2));
 
   arrResult.forEach(v => {
